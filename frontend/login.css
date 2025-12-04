@@ -1,6 +1,41 @@
+img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+
+h1{
+     font-size: 80px;
+    font-family: Georgia;
+    color: rgb(255, 255, 255);
+   text-shadow: 2px 2px 10px black;
+    
+
+}
+
+p{
+    display: flex;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    font-size: 40px;
+}
+
+.texto{
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+
+
 html,body{
-    padding:0px;
-    margin:0px;
+    padding: 0%;
+    margin: 0%;
     width: 100%;
     height:100%;
     
@@ -11,16 +46,25 @@ html,body{
 body{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-image: url(../assets/background4.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    
+
+   
+
+    
 }
 
 form{
-    justify-items: center;
+    justify-items: flex-end;
     align-content: center;
+    
 }
 
 section{
-    background-color:  #000000;
+    background-color:rgb(180, 218, 241);
     width: 400px;
     height:400px;
     color: white;
@@ -28,7 +72,7 @@ section{
     border-radius: 10px;
     justify-items: center;
     align-content: center;
-   box-shadow:  0 0 10px  15px #1791B1;
+   box-shadow:  0 0 10px  15px rgb(26, 34, 80);
    font-size: 30px;
 
 }
@@ -47,25 +91,30 @@ input{
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Times New Roman';
+    background-color:rgb(26, 34, 80);
     
     
 
 }
 
 button{
-    width: 70px;
+
+    width: 300px;
     height: 40px;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(26, 34, 80);
     border-radius: 20px;
     border-style: groove;
     color:white;
     font-family: 'Times New Roman';
     font-size: 18px;
+    
+
    
 
 }
 
 label{
     font-family: 'Times New Roman';
+    color: black;
 }
 
