@@ -14,7 +14,10 @@ img{
     
     
 }
-
+img:hover{
+     transform:scale(1.5);
+    cursor:pointer;
+}
 
 h1{
      font-size: 80px;
@@ -115,9 +118,13 @@ button{
     font-family: 'Times New Roman';
     font-size: 18px;
     
+    
+}
 
-   
-
+button:hover{
+    background-color: rgb(44, 58, 138);
+    transform:scale(1.1);
+    cursor:pointer;
 }
 
 label{
