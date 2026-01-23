@@ -20,7 +20,7 @@
     <div class="fundo">
         <section>
 
-            <form>
+            <form onsubmit="processaCadastro(event)">
                 <div class="envelope">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome">
@@ -52,23 +52,33 @@
             </form>
             <section id="cadastro">
 <div >
-        <h1>Cadastro de usuário</h2>
-            <h2>Usuário</h2>
-            <h2>Senha: </h2>
-            <h2>Data:</h2>
-            <h2>E-mail</h2>
+       <nav>
+        
+            <a>Nome</a>
+            <a>Email</a>
+            <a>Sobrenome</a>
+            <a>Senha</a>
+            <a>Data</a>
+    </nav>
+
+    <ul>
+            <li>Nome</li>
+            <li>Email</li>
+            <li>Sobrenome</li>
+            <li>Senha</li>
+            <li>Data</li>
+        </ul>
+        <div id="botões">
+ <button id=>Remover</button>
+<button>Editar</button>
+        </div>
+        
 </section>
         </section>
-    </div>
-
-    
-
-    </div>
-    
 
 
 </body>
 
-<script src="usuarios.css"></script>
+<script src="usuarios.js"></script>
 
 </html>
