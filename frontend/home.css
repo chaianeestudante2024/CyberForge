@@ -2,11 +2,13 @@ html,body{
     padding:0;
     margin:0;
     width: 100vw;
-    height:100% ;
+     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y:hidden ;
 }
 
 body{
-     background-image: url(../assets/background4.jpg);
+     background-image: url(../assets/abstract.wallpaper.png);
     background-repeat: no-repeat ;
     background-size: cover;
      
@@ -17,7 +19,7 @@ body{
     
    
 nav{
-background-color:  rgb(26, 34, 80);
+background-color: rgba(64, 200, 205, 0.342);
 height: 100px;
  margin: 0;
  padding: 0;
@@ -42,6 +44,7 @@ ul{
 
 main{
     width: 100%;
+    
     padding:60px;
     box-sizing: border-box;
     display:flex;
@@ -51,12 +54,13 @@ main{
 }
 
 .cartao{
-    background-color: rgb(26, 34, 80);
+    background-color: rgb(0, 0, 0);
     width: 300px;
     /* height:500px; */
     border: 0;
      font-size: 10px;
-     box-shadow:  0 0 20px  5px rgb(0, 0, 0);
+     box-shadow:  0 0 40px rgba(64, 200, 205, 0.6),
+  0 0 60px rgba(64, 200, 205, 0.4);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -67,35 +71,37 @@ main{
 
 }
 h1{
-    color:white;
-    font-weight: normal ;
+    color: rgb(64, 200, 205);
+   text-shadow: 2px 2px 10px black;
+  font-weight: normal ;
     font-size: 30px;
     justify-items: center;
-    text-decoration: underline;
+    text-decoration: wavy;
     padding: 0px;
 
    
     
 }
 h2{
-    color:white;
+    color:rgb(255, 255, 255);
     font-weight: normal;
     text-decoration: none;
     font-size: 20px;
     padding: 0px;
     margin:0px;
-
+   
 }
 
+
 img{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     
 
 }
 img:hover{
     cursor:pointer;
-    transform:scale(1.1);
+    transform:scale(1.6);
 }
 #bases{
     display: grid;
@@ -103,11 +109,11 @@ img:hover{
     grid-template-rows: 5 ;
 }
 .bolinha{
-    background-color:rgb(19, 108, 209);
-    width: 20px;
-    height: 20px;
+    background-color:rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    border: 2px white solid;
+    border: 2px rgb(0, 0, 0) solid;
 }
 .grid{
     display: grid;
@@ -116,16 +122,23 @@ img:hover{
 
 .Produtos{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr)
+    
 
 }
 
-.posicao{
+.posições{
      display:grid;
     color:white;
-    background-color:rgb(19, 108, 209);
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
-   border: 2px white solid;
+    place-items: center;
+
+}
+i{
+    color:white;
+font-size: 30px;
+}
+
+#cartao-icones{
+    display:flex;
+    flex-direction: row;
 }
