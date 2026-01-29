@@ -25,13 +25,17 @@ function processaCadastro(evento) {
        
     }
 
-    fetch(`http://10.77.241.169:1880/api/smartsense/${modulo}`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dados)
+    fetch(`http://localhost:1880/api/usuario/cadastrar`,{
+        method:"POST",
+        body:JSON.stringify(dados)
     }).then(res => res.json())
+      .then(data => {
+            console.log(data)
+        })
+}
+
+function buscaUsuarios(){
+    fetch(`http://localhost:1880/api/usuario/listar`).then(res => res.json())
       .then(data => {
             console.log(data)
         })

@@ -10,23 +10,30 @@ function processaFormulario(evento) {
 
     console.log(usuario, senha)
 
-    if (senha != 'Senai') {
-        console.log('A senha é inválida')
-        window.alert('Senha inválida ❌')
-        window.alert('⚠️Use a senha padrão⚠️')
+    fetch(`http://localhost:1880/api/usuario/autenticar`, {
+        method: "POST",
+        body: JSON.stringify({ usuario, senha })
+    }).then((resposta) => {
+            console.log(resposta)
+            if (resposta.ok) {
+                resposta.json()
+            }
+        }).then((usuario) => {
+            window.location.href = "home.html";
+        })
 
-
-    }
-    else {
-        console.log('A senha é válida')
-        const dados = {
-            p_usuario: usuario,
-            p_senha: senha,
-        }
-        localStorage.setItem('usuario', JSON.stringify(dados))
-        window.location.href = "home.html"
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
