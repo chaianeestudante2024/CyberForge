@@ -3,51 +3,70 @@
 
 <head>
 
-    <title>Sistema Bancada</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="https://kit.fontawesome.com/008e153cc7.js" crossorigin="anonymous"></script>
-   
+  <title>Sistema Bancada</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://kit.fontawesome.com/008e153cc7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
+  <section id="loadingcontainer" style="display:none">
+    <section id="loadingfundo">
+      <i class="fa-solid fa-spinner" id="loading"></i>
      
-  
-    <aside>
-          <img src="../assets/logo4.png" alt="logo">
-        <p class="texto1">Rapidez.Eficiência.</p>
-        <h1 class="texto">dados em um clique</h1>
-        <p class="texto2"> Gerenciamento de bancadas á um clique</p>
-    </aside>
+      <h1 id="textoloading">
+        <span>l</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h1>
+    </section>>
+  </section>
 
 
-    <section>
-        <h1 id="texto3">Área de login</h1>
-        <form onsubmit="processaFormulario(event)">
-            <div class="envelope">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" placeholder="Digite seu usuário">
-            </div>
-            <div class="envelope">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Digite a senha padrão">
-            </div>
-            <button type="submit">Entrar</button>
-            
-        </form>
-        
-        
-    </section>
- <div class="icons">
-       <a href="https://www.instagram.com/chai_ane__?igsh=MTA5dWVuaDVza3Izbw==">
-         <i class="fa-brands fa-square-instagram"></i></a>
-         <a href="mailto:chaiane_muller@estudante.sesisenai.org.br">
-             <i class="fa-regular fa-envelope-open"></i>
-         </a>
-    
-    </div>
-   
-    
+
+
+  <aside>
+    <img src="../assets/logo4.png" alt="logo">
+    <p class="texto1">Rapidez.Eficiência.</p>
+    <h1 class="texto">dados em um clique</h1>
+    <p class="texto2"> Gerenciamento de bancadas á um clique</p>
+  </aside>
+
+
+  <section>
+    <h1 id="texto3">Área de login</h1>
+    <form onsubmit="processaFormulario(event)">
+      <div class="envelope">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" placeholder="Digite seu usuário">
+      </div>
+      <div class="envelope">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite a senha padrão">
+      </div>
+      <button type="submit">Entrar</button>
+
+    </form>
+
+
+  </section>
+  <div class="icons">
+    <a href="https://www.instagram.com/chai_ane__?igsh=MTA5dWVuaDVza3Izbw==">
+      <i class="fa-brands fa-square-instagram"></i></a>
+    <a href="mailto:chaiane_muller@estudante.sesisenai.org.br">
+      <i class="fa-regular fa-envelope-open"></i>
+    </a>
+
+  </div>
+
+
 </body>
 
 <script src="login.js"></script>

@@ -8,7 +8,7 @@ html,body{
 }
 
 body{
-     background-image: url(../assets/abstract.wallpaper.png);
+     background-image: url(../assets/fundo5.jpg);
     background-repeat: no-repeat ;
     background-size: cover;
      
@@ -31,8 +31,9 @@ gap: 30px;
  border-radius: 0px;
  gap:30px;
 }
+/*
 #nav2{
-background-color:  rgba(64, 200, 205);
+background-color:  black;
 height: 100px;
  margin: 0;
  padding: 0;
@@ -42,18 +43,19 @@ gap: 30px;
  color: white;
  border-radius: 10px;
  gap:50px
-}
+}*/
 
 #a1{
-    color: white;
+    color:white;
     font-size: 25px;
     text-decoration: none;
 }
+/*
 #a2{
-     color: white;
+     color: rgb(64, 200, 205);
     font-size: 25px;
-    text-decoration: none;
-}
+    text-decoration: none; */
+
 
 
 .fundo{
@@ -141,6 +143,7 @@ label{
     color: rgb(64, 200, 205);
 }
 
+/*
 #cadastro{
     display:flex;
     background-color:rgb(0, 0, 0);
@@ -160,14 +163,15 @@ label{
 header{
    border-radius: 20px; 
 }
-
+/*
 ul{
     display: flex;
     list-style-type: none;
     gap: 50px;
     margin: 0;
     padding: 0;
-    background-color: rgba(128, 128, 128, 0.377);
+    color:black;
+    background-color: rgb(64, 200, 205);
 }
 
 li{
@@ -176,3 +180,21 @@ li{
     
 }
 
+*/
+
+table{
+    background-color: black;
+    border-radius: 20px;
+}
+caption{
+    background-color: rgb(64, 200, 205);
+}
+th{
+    background-color: white;
+    color:black;
+    height:20px;
+}
+td{
+    background-color: white;
+    color:black;
+}

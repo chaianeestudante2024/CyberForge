@@ -19,7 +19,15 @@ function processaFormulario(evento) {
                 resposta.json()
             }
         }).then((usuario) => {
-            window.location.href = "home.html";
+           let tela = document.getElementById('loadingcontainer');
+           tela.style.display = "block";
+            setTimeout(()=>{
+                tela.style.display = "none";
+                window.location.href = "home.html";
+            },3000)
+          
+         
+            
         })
 
 }

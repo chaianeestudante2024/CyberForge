@@ -40,3 +40,28 @@ function buscaUsuarios(){
             console.log(data)
         })
 }
+
+function removerUsuarios(){
+
+    fetch(`http://localhost:1880/api/remover/usuario`,{  
+         method:"DELETE",
+        body:JSON.stringify({"msg":"remover"})
+    }).then(res => res.json())
+    .then(data =>{
+        console.log(data)
+    })
+        
+
+    }
+      
+
+
+function editarUsuarios(){
+   fetch(`http://localhost:1880/api/editar/usuario`,{
+        method:"PUT",
+        body:JSON.stringify({"msg":"editar"})
+   }).then(res => res.json())
+   .then(data =>{
+    console.log(data)
+   })
+}

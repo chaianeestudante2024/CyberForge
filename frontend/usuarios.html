@@ -9,17 +9,20 @@
 </head>
 
 <body>
-  
+
+
+
+
+
     <nav id="nav1">
 
-        <a  id="a1"href="##">Dashboard</a>
-        <a  id="a1"href="##">Pedidos</a>
+
         <a id="a1" href="login.html">Login</a>
-        <a  id="a1" href="usuarios.html">Usuários</a>
-         <a  id=a1 href="home.html">Home</a>
+        <a id="a1" href="usuarios.html">Usuários</a>
+        <a id=a1 href="home.html">Dashboard</a>
     </nav>
 
-    
+
     <div class="fundo">
         <section>
 
@@ -29,7 +32,7 @@
                     <input type="text" id="nome">
                 </div>
 
-                     <div class="envelope">
+                <div class="envelope">
                     <label for="Sobrenome">Sobrenome</label>
                     <input type="text" id="sobrenome">
                 </div>
@@ -39,7 +42,7 @@
                     <input type="email" id="email">
                 </div>
 
-           
+
 
                 <div class="envelope">
                     <label for="senha">Senha</label>
@@ -53,10 +56,10 @@
 
                 </div>
 
-                <button id="botao1 "type="submit">Cadastrar usuário</button>
+                <button id="botao1 " type="submit">Cadastrar usuário</button>
 
             </form>
-            <section id="cadastro">
+            <!--<section id="cadastro">
 <div >
        <header id="nav2">
         
@@ -74,14 +77,41 @@
             <li>Senha</li>
             <li>Data</li>
         </ul>
-        <div id="botões">
- <button id=>Remover</button>
-<button>Editar</button>
-        </div>
-        
+            -->
+            <!--     
 </section>
-        </section>
+        </section> -->
+        <div>
+<table>
+                <caption>Cadastros</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Sobrenome</th>
+                        <th>Senha</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Sobrenome</td>
+                        <td>Senha</td>
+                        <td>Data</td>
+                        <td id="botões">
+                            <button id="Remover" onclick="removerUsuarios()">Remover</button>
+                            <button id="Editar" onclick="editarUsuarios()">Editar</button>
+                        </td>
 
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+            
+        </section>
 
 </body>
 

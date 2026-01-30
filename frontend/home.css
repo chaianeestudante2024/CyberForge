@@ -8,7 +8,7 @@ html,body{
 }
 
 body{
-     background-image: url(../assets/abstract.wallpaper.png);
+     background-image: url(../assets/fundo5.jpg);
     background-repeat: no-repeat ;
     background-size: cover;
      
@@ -131,6 +131,7 @@ img:hover{
 }
 
 .posições{
+    
      display:grid;
     color:white;
     place-items: center;
@@ -146,4 +147,37 @@ font-size: 40px;
 #cartao-icones{
     display:flex;
     flex-direction: row;
+}
+
+
+.containercuriosidade{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+
+}
+#curiosidade{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color:white;
+    background-color: black;
+    height:140px;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0 0 40px rgba(64, 200, 205, 0.6),
+  0 0 60px rgba(64, 200, 205, 0.4);
+    
+}
+i:hover{
+    cursor: pointer;
+    color:rgb(64, 200, 205);
+}
+#curiosidadetexto{
+    margin-left: 10px;
+    font-size: 20px;
+}
+#curiosidadeicone{
+    font-size: 40px;
 }
