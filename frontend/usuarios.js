@@ -6,12 +6,14 @@ function processaCadastro(evento) {
     const input_sobrenome = document.getElementById('sobrenome')
     const input_senha = document.getElementById('senha')
     const input_data = document.getElementById('data')
+    const input_tipo_usuario = document.getElementById('tipo_usuario')
 
     let nome = input_nome.value;
     let email = input_email.value;
     let sobrenome = input_sobrenome.value;
     let senha = input_senha.value;
     let data = input_data.value;
+    let tipo_usuario = input_tipo_usuario.value;
 
      
 
@@ -21,7 +23,7 @@ function processaCadastro(evento) {
         p_sobrenome: sobrenome,
         p_senha: senha,
         p_data: data,
-    
+        p_tipo_usuario: tipo_usuario,
        
     }
 
@@ -33,6 +35,11 @@ function processaCadastro(evento) {
             console.log(data)
         })
 }
+
+
+
+
+
 
 function buscaUsuarios(){
     fetch(`http://localhost:1880/api/usuario/listar`).then(res => res.json())
