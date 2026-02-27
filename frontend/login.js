@@ -14,21 +14,23 @@ function processaFormulario(evento) {
         method: "POST",
         body: JSON.stringify({ usuario, senha })
     }).then((resposta) => {
-            console.log(resposta)
-            if (resposta.ok) {
-                resposta.json()
-            }
-        }).then((usuario) => {
-           let tela = document.getElementById('loadingcontainer');
-           tela.style.display = "block";
-            setTimeout(()=>{
-                tela.style.display = "none";
-                window.location.href = "home.html";
-            },3000)
-          
-         
-            
-        })
+        console.log(resposta)
+        if (resposta.status == 200) {
+            resposta.json()
+        }else if(resposta.status == 401){
+            alert("Usuário inválido")
+        }
+    }).then((usuario) => {
+        let tela = document.getElementById('loadingcontainer');
+        tela.style.display = "block";
+        setTimeout(() => {
+            tela.style.display = "none";
+           // window.location.href = "home.html";
+        }, 3000)
+
+
+
+    })
 
 }
 
