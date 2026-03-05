@@ -1,5 +1,5 @@
 
-function processaFormulario(evento) {
+async function processaFormulario(evento) {
     evento.preventDefault()
     const input_usuario = document.getElementById('usuario')
     const input_senha = document.getElementById('senha')
@@ -7,10 +7,17 @@ function processaFormulario(evento) {
     let usuario = input_usuario.value;
 
     let senha = input_senha.value;
+    if(!input_usuario ||!input_senha){
+        alert("Inputs não encontrados")
+        return;
+    }
+
 
     console.log(usuario, senha)
 
-    fetch(`http://localhost:1880/api/usuario/autenticar`, {
+
+    try{
+        resposta = await fetch(`http://localhost:1880/api/usuario/autenticar`, {
         method: "POST",
         body: JSON.stringify({ usuario, senha })
     }).then((resposta) => {
@@ -34,6 +41,10 @@ function processaFormulario(evento) {
 
 }
 
+catch(erro){
+alert("Erro ao buscar")
+console.log(erro)
+}
 
 
 
@@ -47,5 +58,4 @@ function processaFormulario(evento) {
 
 
 
-
-
+}
