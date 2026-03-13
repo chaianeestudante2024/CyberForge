@@ -25,7 +25,7 @@
     <div class="fundo">
         <section>
 
-            <form onsubmit="processaCadastro(event)">
+            <form onsubmit="salvar(event)">
                 <div class="envelope">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome">
@@ -62,7 +62,8 @@
 
                 </div>
 
-                <button id="botao1 " type="submit">Cadastrar usuário</button>
+                <button id="botao1 " type="submit">Cadastrar/Salvar usuário</button>
+                <button id="limpar" type="submit" onclick="limpar(evento)">Limpar</button>
 
             </form>
             <!--<section id="cadastro">
