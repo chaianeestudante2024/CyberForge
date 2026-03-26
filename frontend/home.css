@@ -101,7 +101,11 @@ img{
 img:hover{
     cursor:pointer;
     transform:scale(1.6);
+     animation-name: spin;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
 }
+
 #bases{
     display: grid;
     grid-template-columns: 6 ;
@@ -176,8 +180,9 @@ i:hover{
 }
 #curiosidadetexto{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 #curiosidadeicone{
     font-size: 40px;
 }
+

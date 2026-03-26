@@ -61,14 +61,16 @@ function buscaUsuarios() {
 }
 
 function removerUsuarios(id) {
+    if (confirm("Deseja realmente excluir esse usuário?")) {
+        fetch(`http://localhost:1880/api/remover/usuario`, {
+            method: "DELETE",
+            body: JSON.stringify({ id })
+        }).then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
 
-    fetch(`http://localhost:1880/api/remover/usuario`, {
-        method: "DELETE",
-        body: JSON.stringify({ id })
-    }).then(res => res.json())
-        .then(data => {
-            console.log(data)
-        })
 
 
 }
